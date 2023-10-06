@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rmiraf www/ || true",
-    "build": "npm run clean && tsc && copy package.json www\\ && cd www && tar -a -c -f Archive.zip . && cd ..",
+    "clean": "rimraf www/ || true",
+    "build": "npm run clean && tsc && copy package.json www\\package.json && cd www && tar -a -c -f Archive.zip * && cd ..",
     "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts"
   },
   "repository": {
