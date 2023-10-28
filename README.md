@@ -28,12 +28,15 @@ GitHub link https://github.com/andresaaap/Udagram-Your-Own-Instagram-on-AWS
 
 Screenshots to prove: The project was deployed using the AWS Elastic Beanstalk CLI eb init, eb create, and eb deploy commands.
 
-- screenshot1
-- screenshot2
-- screenshot3
+- Screenshot 2023-10-28 111532.png
+- Screenshot 2023-10-28 111458.png
+- Screenshot 2023-10-28 111656.png
 
 Screenshots to prove: A screenshot of the elastic beanstalk application dashboard is included in a deployment_screenshot directory.
 
-- screenshot4
+- Screenshot 2023-10-28 111919.png
 
-An endpoint URL for a running elastic beanstalk deployment **http://image-filter-starter-code-dev22.us-east-1.elasticbeanstalk.com**
+An endpoint URL for a running elastic beanstalk deployment **http://image-filter-starter-code-dev22.us-east-1.elasticbeanstalk.com/**
+
+- Test 1: **http://image-filter-starter-code-dev22.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Building92microsoft.jpg/375px-Building92microsoft.jpg**
+- Test 2: **http://image-filter-starter-code-dev22.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Googleplex_HQ.jpg/375px-Googleplex_HQ.jpg**
