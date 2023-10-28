@@ -28,7 +28,9 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   //   the filtered image file [!!TIP res.sendFile(filteredpath); might be useful]
 
 function validateURL(pURL: string) {
-  var regexQuery = "^(https?://)?(www\\.)?([-a-z0-9]{1,63}\\.)*?[a-z0-9][-a-z0-9]{0,61}[a-z0-9]\\.[a-z]{2,6}(/[-\\w@\\+\\.~#\\?&/=%]*)?$";
+  var regexQuery = "^(https?:\/\/)?(www\.)?([-a-z0-9]{1,63}\.)*?[a-z0-9][-a-z0-9]{0,61}[a-z0-9]\.[a-z]{2,6}(\/[-\w@\+\.~#\?&\/=%]*)?$";
+  // console.log(regexQuery);
+  // console.log(pURL);
   var url = new RegExp(regexQuery,"i");
   return url.test(pURL);
 }
@@ -61,7 +63,7 @@ function validateURL(pURL: string) {
           }
         });
       } catch (error) {
-        res.status(404).send('URL for the image was not found')
+        res.status(404).send('Image is invalid')
       }
 
     }

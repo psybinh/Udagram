@@ -18,8 +18,9 @@ You'll need to create a new node server. Open a new terminal within the project 
 2. run the development server with `npm run dev`
 
 ### Deploying your system
-
-Follow the process described in the course to `eb init` a new application and `eb create` a new environment to deploy your image-filter service! Don't forget you can use `eb deploy` to push changes.
+- Build project using `npm run build`
+- Go to folder `cd wwww`
+- Follow the process described in the course to `eb init` a new application and `eb create` a new environment to deploy your image-filter service! Don't forget you can use `eb deploy` to push changes.
 
 ### Project review
 
@@ -35,4 +36,4 @@ Screenshots to prove: A screenshot of the elastic beanstalk application dashboar
 
 - screenshot4
 
-An endpoint URL for a running elastic beanstalk deployment http://image-filter-starter-code-dev22.us-west-2.elasticbeanstalk.com/
+An endpoint URL for a running elastic beanstalk deployment **http://image-filter-starter-code-dev22.us-east-1.elasticbeanstalk.com**

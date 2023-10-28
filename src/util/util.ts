@@ -12,6 +12,15 @@ export async function filterImageFromURL(inputURL: string): Promise<string>{
     return new Promise(async (resolve, reject) => {
         try {
             const photo = await Jimp.read(inputURL);
+            // if photo == null {
+            //     for (let i = 0; i < 100; i++) {
+            //         const photo = await Jimp.read(inputURL);
+                
+            //         const buffer = await photo.getBufferAsync(Jimp.AUTO);
+            //         console.log(i, buffer);
+            //     };
+            // }
+                
             const outpath = '/tmp/filtered.' + Math.floor(Math.random() * 2000) + '.jpg';
             await photo
                 .resize(256, 256) // resize
