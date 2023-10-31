@@ -35,17 +35,17 @@ function validateURL(pURL: string) {
   return url.test(pURL);
 }
 
-  app.get( "/filteredimage", async ( req, res ) => {
+  app.get( "/filteredimage", async ( req : express.Request, res : express.Response ) => {
 
     // 1. validate the image_url query
 
-    var image_url = req.query.image_url;
-    var is_image_url_valid = validateURL(image_url);
+    var image_url : string = req.query.image_url;
+    var is_image_url_valid : Boolean = validateURL(image_url);
 
     if(is_image_url_valid){
       // 2. call filterImageFromURL(image_url) to filter the image
       try {
-        var image_path = await filterImageFromURL(image_url);
+        var image_path : string = await filterImageFromURL(image_url);
         var options = {
           dotfiles: 'deny',
           headers: {
